@@ -1,0 +1,11 @@
+using System;
+
+namespace ConsoleApp {
+    public class Program {
+        public static void Main(string[] args) {
+            Console.WriteLine("Hello, World!");
+            Console.WriteLine("Welcome to C# programming!");
+        }
+        public static void TestMain(string[] args) { Main(args); }
+    }
+}
