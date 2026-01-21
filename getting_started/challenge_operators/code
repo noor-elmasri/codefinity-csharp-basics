@@ -1,0 +1,30 @@
+using System;
+
+namespace ConsoleApp
+{
+    public class Program
+    {
+        public static void RunStoreCalculator(double price, int quantity, double discountPercent, double taxPercent)
+        {
+            double totalPrice = price * quantity;
+            double discountAmount = totalPrice * discountPercent / 100;
+            double taxAmount = (totalPrice - discountAmount ) * taxPercent / 100;
+            double finalPrice = totalPrice - discountAmount  + taxAmount;
+
+            Console.WriteLine("Total price: " + totalPrice);
+            Console.WriteLine("Discount amount: " + discountAmount);
+            Console.WriteLine("Tax amount: " + taxAmount);
+            Console.WriteLine("Final price: " + finalPrice);
+        }
+
+        public static void Main(string[] args)
+        {
+            double price = 50.0;
+            int quantity = 4;
+            double discountPercent = 10.0;
+            double taxPercent = 8.0;
+
+            RunStoreCalculator(price, quantity, discountPercent, taxPercent);
+        }
+    }
+}
