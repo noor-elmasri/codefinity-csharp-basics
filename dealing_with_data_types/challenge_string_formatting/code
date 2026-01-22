@@ -1,0 +1,14 @@
+using System;
+
+namespace ConsoleApp {
+    public class Program {
+        public static void Main(string[] args) {
+            string name = "Alice";
+            int age = 20;
+
+            Console.WriteLine($"Hello, my name is {name} and I am {age} years old.");
+        }
+
+        public static void TestMain(string[] args) { Main(args); }
+    }
+}
