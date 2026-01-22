@@ -1,0 +1,26 @@
+using System;
+
+namespace ConsoleApp {
+    public class Program {
+        public static void Main(string[] args)
+        {
+            int quantity = 4;
+            double pricePerItem = 3.75;
+            double quantityAsDouble = (double)quantity;
+            int priceAsInt = (int)pricePerItem;
+
+            double totalCost = quantity * pricePerItem;
+
+            Console.WriteLine("Quantity: " + quantity);
+            Console.WriteLine("Price per item: " + pricePerItem);
+            Console.WriteLine("Quantity as double: " + quantityAsDouble);
+            Console.WriteLine("Price per item as int: " + priceAsInt);
+            Console.WriteLine("Total cost: " + totalCost);
+        }
+
+        public static void TestMain()
+        {
+            Main(new string[0]);
+        }
+    }
+}
