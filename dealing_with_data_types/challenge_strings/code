@@ -4,9 +4,9 @@ namespace ConsoleApp {
     public class Program {
         public static void Main(string[] args) {
             // Declare a string variable for the book's title
-            string bookTitle = "___";
+            string bookTitle = "The Great Gatsby";
             // Declare a string variable for the author's name
-            string authorName = "___";
+            string authorName = "F. Scott Fitzgerald";
 
             // Print the book title
             Console.WriteLine(bookTitle);
