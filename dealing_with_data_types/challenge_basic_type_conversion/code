@@ -1,0 +1,33 @@
+using System;
+
+namespace ConsoleApp
+{
+    public class Program
+    {
+        public static void CalculateOrderWeight(double itemWeightKg, int itemCount, double packagingWeightPerItem)
+        {
+            double itemsWeight = itemWeightKg * itemCount;
+
+            double totalPackagingWeight = packagingWeightPerItem * itemCount;
+
+            double totalWeight = itemsWeight + totalPackagingWeight;
+
+            int totalWeightInt = Convert.ToInt32(totalWeight);
+
+            Console.WriteLine("Item weight: " + itemWeightKg + " kg");
+            Console.WriteLine("Packaging weight per item: " + packagingWeightPerItem + " kg");
+            Console.WriteLine("Item count: " + itemCount);
+            Console.WriteLine("Total weight (double): " + totalWeight);
+            Console.WriteLine("Total weight (int): " + totalWeightInt);
+        }
+
+        public static void Main(string[] args)
+        {
+            double itemWeight = 2.5;
+            int count = 4;
+            double packagingWeight = 0.2;
+
+            CalculateOrderWeight(itemWeight, count, packagingWeight);
+        }
+    }
+}
