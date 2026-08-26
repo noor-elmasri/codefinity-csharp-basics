@@ -1,0 +1,31 @@
+using System;
+
+namespace ConsoleApp
+{
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            // 1. Declare an integer variable for the user's age
+            int age = 70;
+
+            // 2. Declare a boolean variable for membership
+            bool isMember = false;
+
+            // 3. Check discount eligibility using if and else
+            if (age >= 65 || isMember == true) 
+            {
+                Console.WriteLine("Eligible for discount");
+            }
+            else 
+            {
+                Console.WriteLine("Not eligible for discount");
+        }
+        }
+
+        public static void TestMain(string[] args)
+        {
+            Main(args);
+        }
+    }
+}
