@@ -1,0 +1,35 @@
+using System;
+
+namespace ConsoleApp
+{
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            int age = 15;
+
+            // 1. Check if the user is 18 or older
+            if (age >= 18)
+            {
+                Console.WriteLine("Access granted");
+            }
+
+            // 2. Check if the user is between 13 and 17
+            if (age > 13 && age < 17)
+            {
+                Console.WriteLine("Access limited");
+            }
+
+            // 3. Check if the user is 12 or younger
+            if (age <= 12)
+            {
+                Console.WriteLine("Access denied");
+            }
+        }
+
+        public static void TestMain(string[] args)
+        {
+            Main(args);
+        }
+    }
+}
