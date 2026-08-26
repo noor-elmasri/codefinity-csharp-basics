@@ -1,0 +1,30 @@
+using System;
+
+namespace ConsoleApp
+{
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            // 1. Declare an integer variable for the user's age
+            int age = 30;
+
+            // 2. Declare a boolean variable for membership status
+            bool isMember = true;
+
+            // 3. Use comparison and logical operators with a ternary operator
+            // Eligible if age is 65 or older OR if the user is a member
+            string message = (age >= 65 || isMember) 
+                             ? "Eligible for discount" 
+                             : "Not eligible for discount";
+
+            // 4. Print the message
+            Console.WriteLine(message);
+        }
+
+        public static void TestMain(string[] args)
+        {
+            Main(args);
+        }
+    }
+}
