@@ -1,0 +1,36 @@
+using System;
+
+namespace ConsoleApp {
+    public class Program {
+
+        public static void PrintPlanDescription(int code)
+        {
+            switch (code)
+            {
+                case 1:
+                    Console.WriteLine("Basic Plan");
+                    break;
+                case 2:
+                    Console.WriteLine("Standard Plan");
+                    break;
+                case 3:
+                    Console.WriteLine("Premium Plan");
+                    break;
+                case 4:
+                    Console.WriteLine("Weekend");
+                    break;
+                case 5:
+                    Console.WriteLine("Holiday");
+                    break;
+                default:
+                    Console.WriteLine("Invalid code");
+                    break;
+            }
+        }
+        
+        public static void Main(string[] args)
+        {
+            PrintPlanDescription(3);
+        }
+    }
+}
